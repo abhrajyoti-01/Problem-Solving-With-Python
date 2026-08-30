@@ -1,0 +1,9 @@
+StudentID,Name,Section,Subject,Marks,Attendance
+1,Ananya,A,Python,88,92
+2,Rohan,A,Python,76,85
+3,Meera,B,Python,,90
+4,Sourav,B,Python,81,88
+5,Priya,A,Python,95,96
+6,Arjun,B,Python,67,80
+7,Nikita,A,Python,79,
+8,Ritwik,B,Python,84,91
