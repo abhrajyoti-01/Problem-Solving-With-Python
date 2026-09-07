@@ -1,4 +1,4 @@
-file_name = input("Enter the file name to open: ").strip()
+file_name = 'missing_file.txt'
 
 try:
     with open(file_name, "r", encoding="utf-8") as file_object:

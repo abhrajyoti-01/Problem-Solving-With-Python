@@ -6,6 +6,6 @@ def power(base, exponent):
     return base * power(base, exponent - 1)
 
 
-base = float(input("Enter the base value: "))
-exponent = int(input("Enter the exponent: "))
+base = 2.0
+exponent = 5
 print(f"{base} raised to the power {exponent} is {power(base, exponent)}")

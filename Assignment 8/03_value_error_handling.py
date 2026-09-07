@@ -1,4 +1,4 @@
-user_input = input("Enter an integer value: ")
+user_input = 'abc'
 
 try:
     number = int(user_input)

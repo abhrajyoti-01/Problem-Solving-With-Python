@@ -3,7 +3,7 @@ print("1. IndexError")
 print("2. TypeError")
 print("3. FileNotFoundError")
 
-choice = input("Enter your choice: ").strip()
+choice = '1'
 
 try:
     if choice == "1":

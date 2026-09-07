@@ -4,7 +4,7 @@ def factorial(number):
     return number * factorial(number - 1)
 
 
-number = int(input("Enter a non-negative integer: "))
+number = 6
 if number < 0:
     print("Factorial is not defined for negative numbers.")
 else:

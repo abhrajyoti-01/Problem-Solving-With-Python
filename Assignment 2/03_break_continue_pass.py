@@ -1,5 +1,5 @@
-stop_number = int(input("Enter the number at which the loop should stop: "))
-skip_number = int(input("Enter the number to skip: "))
+stop_number = 5
+skip_number = 7
 
 print("Break statement:")
 for number in range(1, 11):

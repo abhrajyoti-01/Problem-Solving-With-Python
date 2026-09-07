@@ -1,5 +1,5 @@
-first_number = float(input("Enter the first number: "))
-second_number = float(input("Enter the second number: "))
+first_number = 6.0
+second_number = 7.0
 total = first_number + second_number
 product = first_number * second_number
 print(f"Sum = {total}")

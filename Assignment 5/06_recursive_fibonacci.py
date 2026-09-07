@@ -6,7 +6,7 @@ def fibonacci(position):
     return fibonacci(position - 1) + fibonacci(position - 2)
 
 
-position = int(input("Enter the Fibonacci position: "))
+position = 7
 if position < 0:
     print("Please enter a non-negative integer.")
 else:

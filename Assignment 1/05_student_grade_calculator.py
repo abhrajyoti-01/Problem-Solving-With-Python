@@ -10,7 +10,7 @@ def calculate_grade(percentage: float) -> str:
     return "Fail"
 
 
-percentage = float(input("Enter the student's percentage: "))
+percentage = 82.5
 
 if not 0 <= percentage <= 100:
     print("Please enter a percentage between 0 and 100.")

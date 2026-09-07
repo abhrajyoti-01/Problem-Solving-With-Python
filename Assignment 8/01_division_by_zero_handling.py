@@ -1,5 +1,5 @@
-numerator = float(input("Enter the numerator: "))
-denominator = float(input("Enter the denominator: "))
+numerator = 10.0
+denominator = 0.0
 
 try:
     result = numerator / denominator
