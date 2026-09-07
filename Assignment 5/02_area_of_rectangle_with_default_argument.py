@@ -1,3 +1,3 @@
-length = 5.0
-breadth = 3.0
+length = 5
+breadth = 1
 print(f"Area of the rectangle = {length * breadth}")

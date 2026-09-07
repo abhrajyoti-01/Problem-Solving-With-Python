@@ -21,8 +21,7 @@ def bubble_sort(values):
     return items, comparison_count, swap_count
 
 
-raw_values = input("Enter numbers separated by spaces: ").split()
-values = [int(value) for value in raw_values]
+values = [64, 25, 12, 22, 31]
 sorted_values, comparison_count, swap_count = bubble_sort(values)
 print(f"Sorted list: {sorted_values}")
 print(f"Comparisons: {comparison_count}")

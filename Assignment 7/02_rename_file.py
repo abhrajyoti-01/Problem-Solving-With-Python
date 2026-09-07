@@ -1,6 +1,4 @@
 import os
-
-
 with open("backup.txt", "w", encoding="utf-8") as file_object:
     file_object.write("This file will be renamed.\n")
 
