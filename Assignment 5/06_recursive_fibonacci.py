@@ -5,7 +5,6 @@ def fibonacci(position):
         return 1
     return fibonacci(position - 1) + fibonacci(position - 2)
 
-
 position = 7
 if position < 0:
     print("Please enter a non-negative integer.")
