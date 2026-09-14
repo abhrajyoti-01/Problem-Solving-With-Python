@@ -1,7 +1,5 @@
 def is_neon(number):
-    square = number * number
-    digit_sum = sum(int(digit) for digit in str(square))
-    return digit_sum == number
+    return sum(map(int, str(number * number))) == number
 
 
 number = int(input("Enter a number to check: "))

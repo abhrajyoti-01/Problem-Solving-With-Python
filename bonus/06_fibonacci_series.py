@@ -1,6 +1,5 @@
 def fibonacci_series(count):
-    series = []
-    current, next_value = 0, 1
+    series, current, next_value = [], 0, 1
     for _ in range(count):
         series.append(current)
         current, next_value = next_value, current + next_value

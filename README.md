@@ -26,15 +26,15 @@ This repository contains 14 assignments ranging from basic programming construct
 
 | Assignment | Topic | Description |
 | :---: | :--- | :--- |
-| **01** | [Decision Making](./Assignment%201) | Conditional Statements (`if`, `elif`, `else`) |
-| **02** | [Loops and Control Statements](./Assignment%202) | Iterations and loop control (`break`, `continue`, `pass`) |
-| **03** | [Lists, Tuples and Sets](./Assignment%203) | Data structures and comprehensions |
-| **04** | [Sorting Algorithms](./Assignment%204) | Implementation of Selection and Bubble sort |
-| **05** | [Functions and Recursion](./Assignment%205) | Modular programming and recursive logic |
-| **06** | [File Handling Basics](./Assignment%206) | Reading, writing, and pointer manipulation |
-| **07** | [File & Directory Operations](./Assignment%207) | Advanced OS-level file management |
-| **08** | [Exception Handling](./Assignment%208) | Error handling using `try`, `except`, and `finally` |
-| **09** | [Classes and Objects](./Assignment%209) | Object-Oriented Programming (OOP) fundamentals |
+| **01** | [Decision Making](./Assignment%2001) | Conditional Statements (`if`, `elif`, `else`) |
+| **02** | [Loops and Control Statements](./Assignment%2002) | Iterations and loop control (`break`, `continue`, `pass`) |
+| **03** | [Lists, Tuples and Sets](./Assignment%2003) | Data structures and comprehensions |
+| **04** | [Sorting Algorithms](./Assignment%2004) | Implementation of Selection and Bubble sort |
+| **05** | [Functions and Recursion](./Assignment%2005) | Modular programming and recursive logic |
+| **06** | [File Handling Basics](./Assignment%2006) | Reading, writing, and pointer manipulation |
+| **07** | [File & Directory Operations](./Assignment%2007) | Advanced OS-level file management |
+| **08** | [Exception Handling](./Assignment%2008) | Error handling using `try`, `except`, and `finally` |
+| **09** | [Classes and Objects](./Assignment%2009) | Object-Oriented Programming (OOP) fundamentals |
 | **10** | [NumPy Arrays](./Assignment%2010) | Multidimensional arrays and mathematical operations |
 | **11** | [Data Analysis with Pandas](./Assignment%2011) | Data cleaning, filtering, and aggregation |
 | **12** | [Data Visualization](./Assignment%2012) | Creating plots using Matplotlib and Seaborn |
@@ -70,7 +70,7 @@ To execute any assignment program, navigate to the repository root and run the s
 **Example:**
 
 ```bash
-python "Assignment 1/01_even_or_odd.py"
+python "Assignment 01/01_even_or_odd.py"
 ```
 
 Output and generated plots (if any) will be saved in the `output/` directory within the respective assignment folder.

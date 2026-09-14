@@ -17,8 +17,5 @@ for i in range(1, n + 1):
 print("\n4. Floyd's triangle")
 value = 1
 for i in range(1, n + 1):
-    row = []
-    for _ in range(i):
-        row.append(str(value))
-        value += 1
-    print(" ".join(row))
+    print(" ".join(str(value + j) for j in range(i)))
+    value += i

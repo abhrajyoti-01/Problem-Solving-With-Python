@@ -1,14 +1,9 @@
+from math import factorial
+
+
 def is_strong(number):
-    original = number
-    total = 0
-    while number > 0:
-        digit = number % 10
-        factorial = 1
-        for i in range(2, digit + 1):
-            factorial *= i
-        total += factorial
-        number //= 10
-    return original == total
+    total = sum(factorial(int(digit)) for digit in str(number)) if number > 0 else 0
+    return total == number
 
 
 number = int(input("Enter a number to check: "))

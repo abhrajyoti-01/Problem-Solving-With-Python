@@ -5,16 +5,9 @@ def read_matrix(name):
     return [list(map(int, input().split())) for _ in range(rows)]
 
 
-def multiply_matrices(a, b):
-    rows_a, cols_a, cols_b = len(a), len(a[0]), len(b[0])
-    result = [[0] * cols_b for _ in range(rows_a)]
-    for i in range(rows_a):
-        for j in range(cols_b):
-            total = 0
-            for k in range(cols_a):
-                total += a[i][k] * b[k][j]
-            result[i][j] = total
-    return result
+def print_matrix(matrix):
+    for row in matrix:
+        print("\t".join(f"{value:>6.2f}" for value in row))
 
 
 def divide_matrix_by_scalar(matrix, scalar):
@@ -23,19 +16,13 @@ def divide_matrix_by_scalar(matrix, scalar):
     return [[value / scalar for value in row] for row in matrix]
 
 
-def print_matrix(matrix):
-    for row in matrix:
-        print("\t".join(f"{value:>6.2f}" for value in row))
-
-
-a = read_matrix("A")
-b = read_matrix("B")
+a, b = read_matrix("A"), read_matrix("B")
 
 if len(a[0]) != len(b):
     print(f"Cannot multiply: A has {len(a[0])} columns but B has {len(b)} rows.")
 else:
     print("A x B:")
-    print_matrix(multiply_matrices(a, b))
+    print_matrix([[sum(x * y for x, y in zip(row, column)) for column in zip(*b)] for row in a])
 
 scalar = float(input("Enter a scalar to divide matrix A by: "))
 print(f"A / {scalar}:")

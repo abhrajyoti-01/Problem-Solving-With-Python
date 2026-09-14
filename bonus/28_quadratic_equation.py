@@ -14,8 +14,7 @@ else:
         root2 = (-b - math.sqrt(discriminant)) / (2 * a)
         print(f"Two real roots: {root1:.2f} and {root2:.2f}")
     elif discriminant == 0:
-        root = -b / (2 * a)
-        print(f"One repeated root: {root:.2f}")
+        print(f"One repeated root: {-b / (2 * a):.2f}")
     else:
         real = -b / (2 * a)
         imaginary = math.sqrt(-discriminant) / (2 * a)

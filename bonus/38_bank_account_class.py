@@ -23,11 +23,8 @@ class BankAccount:
         print(f"Account holder: {self.holder} | Balance: {self.balance:.2f}")
 
 
-holder = input("Enter account holder name: ")
-balance = float(input("Enter opening balance: "))
-account = BankAccount(holder, balance)
+account = BankAccount(input("Enter account holder name: "), float(input("Enter opening balance: ")))
 account.show()
-
 account.deposit(float(input("Enter amount to deposit: ")))
 account.withdraw(float(input("Enter amount to withdraw: ")))
 account.show()

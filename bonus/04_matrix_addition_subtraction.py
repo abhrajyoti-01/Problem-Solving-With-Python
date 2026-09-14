@@ -5,25 +5,14 @@ def read_matrix(name):
     return [list(map(int, input().split())) for _ in range(rows)]
 
 
-def add_matrices(a, b):
-    rows, cols = len(a), len(a[0])
-    return [[a[i][j] + b[i][j] for j in range(cols)] for i in range(rows)]
-
-
-def subtract_matrices(a, b):
-    rows, cols = len(a), len(a[0])
-    return [[a[i][j] - b[i][j] for j in range(cols)] for i in range(rows)]
-
-
 def print_matrix(matrix):
     for row in matrix:
         print("\t".join(f"{value:>4}" for value in row))
 
 
-a = read_matrix("A")
-b = read_matrix("B")
+a, b = read_matrix("A"), read_matrix("B")
 
-if len(a) != len(b) or len(a[0]) != len(b[0]):
+if (len(a), len(a[0])) != (len(b), len(b[0])):
     print("Matrices must have the same dimensions for addition/subtraction.")
 else:
     print("Matrix A:")
@@ -31,6 +20,6 @@ else:
     print("Matrix B:")
     print_matrix(b)
     print("A + B:")
-    print_matrix(add_matrices(a, b))
+    print_matrix([[x + y for x, y in zip(row_a, row_b)] for row_a, row_b in zip(a, b)])
     print("A - B:")
-    print_matrix(subtract_matrices(a, b))
+    print_matrix([[x - y for x, y in zip(row_a, row_b)] for row_a, row_b in zip(a, b)])
