@@ -65,12 +65,13 @@ pip install -r requirements.txt
 
 ## Usage
 
-To execute any assignment program, navigate to the repository root and run the script using the Python interpreter. 
+To execute any assignment program, navigate to the assignment folder and run the script using the Python interpreter. Scripts that read datasets or save plots use relative `data/` and `output/` paths, so they must be run from inside their assignment folder. 
 
 **Example:**
 
 ```bash
-python "Assignment 01/01_even_or_odd.py"
+cd "Assignment 01"
+python 01_even_or_odd.py
 ```
 
 Output and generated plots (if any) will be saved in the `output/` directory within the respective assignment folder.

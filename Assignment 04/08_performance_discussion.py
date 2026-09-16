@@ -1,13 +1,13 @@
 def selection_sort(values):
     items, comparisons, swaps = values[:], 0, 0
-    for index in range(len(items)):
-        min_index = index
-        for next_index in range(index + 1, len(items)):
+    for current_index in range(len(items)):
+        min_index = current_index
+        for next_index in range(current_index + 1, len(items)):
             comparisons += 1
             if items[next_index] < items[min_index]:
                 min_index = next_index
-        if min_index != index:
-            items[index], items[min_index] = items[min_index], items[index]
+        if min_index != current_index:
+            items[current_index], items[min_index] = items[min_index], items[current_index]
             swaps += 1
     return items, comparisons, swaps
 
@@ -28,10 +28,9 @@ def bubble_sort(values):
 
 
 values = [64, 25, 12, 22, 31]
-selection_result = selection_sort(values)
-bubble_result = bubble_sort(values)
+_, selection_comparisons, selection_swaps = selection_sort(values)
+_, bubble_comparisons, bubble_swaps = bubble_sort(values)
 
-print(f"{'Algorithm':<18}{'Sorted Output':<24}{'Comparisons':<14}{'Swaps':<10}")
-print("-" * 66)
-print(f"{'Selection Sort':<18}{str(selection_result[0]):<24}{selection_result[1]:<14}{selection_result[2]:<10}")
-print(f"{'Bubble Sort':<18}{str(bubble_result[0]):<24}{bubble_result[1]:<14}{bubble_result[2]:<10}")
+print(f"Sorting a list of {len(values)} elements:")
+print(f"Selection sort: {selection_comparisons} comparisons, {selection_swaps} swaps")
+print(f"Bubble sort: {bubble_comparisons} comparisons, {bubble_swaps} swaps")

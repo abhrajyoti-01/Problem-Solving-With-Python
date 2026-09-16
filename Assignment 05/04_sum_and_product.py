@@ -1,3 +1,7 @@
-first_number, second_number = 6.0, 7.0
-print(f"Sum = {first_number + second_number}")
-print(f"Product = {first_number * second_number}")
+def sum_and_product(first_number, second_number):
+    return first_number + second_number, first_number * second_number
+
+
+total, product = sum_and_product(6, 7)
+print(f"Sum = {total}")
+print(f"Product = {product}")
